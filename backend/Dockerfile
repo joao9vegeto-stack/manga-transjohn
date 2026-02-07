@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     libxrender-dev \
     libgomp1 \
     wget \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements
@@ -23,7 +24,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Create data directory
-RUN mkdir -p /app/data
+RUN mkdir -p /app/data /app/fonts
 
 # Expose port
 EXPOSE 8000
