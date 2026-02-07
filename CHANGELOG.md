@@ -2,6 +2,28 @@
 
 All notable changes to Manga TransJohn will be documented in this file.
 
+## [1.0.4] - 2024-02-07
+
+### Security
+- **CRITICAL**: Updated Next.js to 15.5.10 to fix RCE vulnerability in React flight protocol
+- Fixed Remote Code Execution (RCE) in React flight protocol
+- Fixed multiple DoS vulnerabilities related to React Server Components
+- Fixed HTTP request deserialization DoS vulnerabilities
+
+### Changed
+- Upgraded Next.js from 15.2.3 to 15.5.10
+- Upgraded React from 18.3.1 to 19.0.0 (required for Next.js 15.5.x)
+- Upgraded React-DOM from 18.3.1 to 19.0.0
+- Updated @types/react to 19.0.6
+- Updated @types/react-dom to 19.0.3
+- Updated eslint-config-next to 15.5.10
+
+### Notes
+- React 19 is now stable and required for Next.js 15.5.x
+- All known Next.js vulnerabilities now patched
+- Application fully compatible with React 19 and Next.js 15.5.10
+- PaddlePaddle vulnerabilities remain (no upstream patches available)
+
 ## [1.0.3] - 2024-02-07
 
 ### Security
