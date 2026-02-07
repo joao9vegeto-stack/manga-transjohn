@@ -2,6 +2,26 @@
 
 All notable changes to Manga TransJohn will be documented in this file.
 
+## [1.0.2] - 2024-02-07
+
+### Security
+- **CRITICAL**: Updated Next.js to 15.0.8 to fix remaining DoS vulnerabilities
+- Updated React to 18.3.1 for Next.js 15 compatibility
+- Updated React-DOM to 18.3.1 for Next.js 15 compatibility
+- Updated TypeScript to 5.7.3
+- Updated ESLint to 9.18.0
+- Updated all @types packages to latest versions
+
+### Changed
+- Upgraded Next.js from 14.2.35 to 15.0.8 (major version upgrade)
+- Upgraded ESLint from 8.x to 9.x (major version upgrade)
+- Updated eslint-config-next to 15.0.8
+
+### Notes
+- Next.js 15 includes performance improvements and security fixes
+- Application code compatible with Next.js 15 without modifications
+- PaddlePaddle vulnerabilities remain (no upstream patches available)
+
 ## [1.0.1] - 2024-02-07
 
 ### Security

@@ -4,7 +4,7 @@
 
 This document outlines security vulnerabilities that were identified and patched in the Manga TransJohn project.
 
-## Updated Dependencies (2024-02-07)
+## Updated Dependencies (Latest: 2024-02-07)
 
 ### Backend (Python) - ALL PATCHED ✅
 
@@ -25,11 +25,19 @@ This document outlines security vulnerabilities that were identified and patched
 
 | Package | Old Version | New Version | Vulnerabilities Fixed |
 |---------|-------------|-------------|----------------------|
-| next | 14.0.4 | 14.2.35 | Multiple DoS, SSRF, Auth bypass, Cache poisoning |
+| next | 14.0.4 → 14.2.35 → **15.0.8** | Multiple DoS, SSRF, Auth bypass, Cache poisoning |
+| react | 18.2.0 | 18.3.1 | Compatibility with Next.js 15 |
+| react-dom | 18.2.0 | 18.3.1 | Compatibility with Next.js 15 |
 | axios | 1.6.2 | 1.12.0 | DoS, SSRF, Credential leakage |
 | tailwindcss | 3.3.6 | 3.4.17 | Latest stable version |
 | autoprefixer | 10.4.16 | 10.4.20 | Latest stable version |
 | postcss | 8.4.32 | 8.4.49 | Latest stable version |
+| typescript | 5.3.3 | 5.7.3 | Latest stable version |
+| @types/node | 20.10.5 | 22.10.5 | Latest type definitions |
+| @types/react | 18.2.45 | 18.3.18 | Latest type definitions |
+| @types/react-dom | 18.2.18 | 18.3.5 | Latest type definitions |
+| eslint | 8.56.0 | 9.18.0 | Latest stable version |
+| eslint-config-next | 14.0.4 → 14.2.35 → **15.0.8** | Compatibility with Next.js 15 |
 
 ## ⚠️ CRITICAL: PaddlePaddle Remaining Vulnerabilities
 
