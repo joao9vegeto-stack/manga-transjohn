@@ -25,7 +25,7 @@ This document outlines security vulnerabilities that were identified and patched
 
 | Package | Old Version | New Version | Vulnerabilities Fixed |
 |---------|-------------|-------------|----------------------|
-| next | 14.0.4 → 14.2.35 → **15.0.8** | Multiple DoS, SSRF, Auth bypass, Cache poisoning |
+| next | 14.0.4 → 14.2.35 → 15.0.8 → **15.2.3** | DoS, SSRF, Auth bypass, Cache poisoning |
 | react | 18.2.0 | 18.3.1 | Compatibility with Next.js 15 |
 | react-dom | 18.2.0 | 18.3.1 | Compatibility with Next.js 15 |
 | axios | 1.6.2 | 1.12.0 | DoS, SSRF, Credential leakage |
@@ -37,7 +37,7 @@ This document outlines security vulnerabilities that were identified and patched
 | @types/react | 18.2.45 | 18.3.18 | Latest type definitions |
 | @types/react-dom | 18.2.18 | 18.3.5 | Latest type definitions |
 | eslint | 8.56.0 | 9.18.0 | Latest stable version |
-| eslint-config-next | 14.0.4 → 14.2.35 → **15.0.8** | Compatibility with Next.js 15 |
+| eslint-config-next | 14.0.4 → 14.2.35 → 15.0.8 → **15.2.3** | Compatibility with Next.js 15 |
 
 ## ⚠️ CRITICAL: PaddlePaddle Remaining Vulnerabilities
 

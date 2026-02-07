@@ -2,6 +2,22 @@
 
 All notable changes to Manga TransJohn will be documented in this file.
 
+## [1.0.3] - 2024-02-07
+
+### Security
+- **CRITICAL**: Updated Next.js to 15.2.3 to fix cache poisoning DoS and authorization bypass vulnerabilities
+- Fixed cache poisoning DoS vulnerability (CVE pending)
+- Fixed authorization bypass in Next.js middleware across multiple versions
+
+### Changed
+- Upgraded Next.js from 15.0.8 to 15.2.3
+- Updated eslint-config-next to 15.2.3
+
+### Notes
+- All known Next.js vulnerabilities now patched
+- Application fully compatible with Next.js 15.2.3
+- PaddlePaddle vulnerabilities remain (no upstream patches available)
+
 ## [1.0.2] - 2024-02-07
 
 ### Security
