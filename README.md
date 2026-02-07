@@ -2,6 +2,16 @@
 
 Self-hosted web application for translating manga/manhwa images to Brazilian Portuguese (pt-BR).
 
+## ⚠️ Security Notice
+
+**IMPORTANT**: This application uses PaddlePaddle 2.6.0 which has several **unpatched vulnerabilities** including RCE and command injection. See [SECURITY.md](SECURITY.md) for:
+- Full vulnerability details
+- Mitigation strategies
+- Alternative OCR solutions
+- Security hardening recommendations
+
+**Recommended for personal use in isolated environments only.** Do not expose to the internet.
+
 ## Features
 
 - **Complete Translation Pipeline**: Text detection → OCR → Translation → Inpainting → Typesetting

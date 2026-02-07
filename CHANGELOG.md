@@ -2,6 +2,43 @@
 
 All notable changes to Manga TransJohn will be documented in this file.
 
+## [1.0.1] - 2024-02-07
+
+### Security
+- **CRITICAL**: Updated all vulnerable dependencies
+- Updated fastapi from 0.104.1 to 0.115.6 (ReDoS vulnerability)
+- Updated python-multipart from 0.0.6 to 0.0.22 (file write, DoS, ReDoS)
+- Updated pillow from 10.1.0 to 10.3.0 (buffer overflow)
+- Updated paddlepaddle from 2.5.2 to 2.6.0 (code injection - partial fix)
+- Updated next from 14.0.4 to 14.2.35 (multiple DoS, SSRF, auth bypass)
+- Updated axios from 1.6.2 to 1.12.0 (DoS, SSRF vulnerabilities)
+- Added SECURITY.md with vulnerability documentation
+- Added Docker security hardening (cap_drop, no-new-privileges)
+- Added resource limits to prevent DoS
+
+### Changed
+- Updated uvicorn to 0.34.0
+- Updated pydantic to 2.10.6
+- Updated requests to 2.32.3
+- Updated google-generativeai to 0.8.3
+- Updated tailwindcss to 3.4.17
+- Updated autoprefixer to 10.4.20
+- Updated postcss to 8.4.49
+- Fonts volume now read-only in Docker
+- Added CPU and memory limits to Docker services
+
+### Documentation
+- Added comprehensive SECURITY.md
+- Updated README with security warning
+- Documented PaddlePaddle unpatched vulnerabilities
+- Added mitigation strategies
+- Added alternative OCR suggestions
+
+### Known Issues
+- PaddlePaddle 2.6.0 still has unpatched vulnerabilities (RCE, command injection, path traversal)
+- See SECURITY.md for details and mitigations
+- Recommended for personal use in isolated environments only
+
 ## [1.0.0] - 2024-02-07
 
 ### Added
