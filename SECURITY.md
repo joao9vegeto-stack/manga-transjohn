@@ -25,19 +25,19 @@ This document outlines security vulnerabilities that were identified and patched
 
 | Package | Old Version | New Version | Vulnerabilities Fixed |
 |---------|-------------|-------------|----------------------|
-| next | 14.0.4 → 14.2.35 → 15.0.8 → **15.2.3** | DoS, SSRF, Auth bypass, Cache poisoning |
-| react | 18.2.0 | 18.3.1 | Compatibility with Next.js 15 |
-| react-dom | 18.2.0 | 18.3.1 | Compatibility with Next.js 15 |
+| next | 14.0.4 → **15.5.10** | **15.5.10** | DoS, SSRF, Auth bypass, Cache poisoning, **RCE** |
+| react | 18.2.0 → **19.0.0** | **19.0.0** | Compatibility with Next.js 15.5.x |
+| react-dom | 18.2.0 → **19.0.0** | **19.0.0** | Compatibility with Next.js 15.5.x |
 | axios | 1.6.2 | 1.12.0 | DoS, SSRF, Credential leakage |
 | tailwindcss | 3.3.6 | 3.4.17 | Latest stable version |
 | autoprefixer | 10.4.16 | 10.4.20 | Latest stable version |
 | postcss | 8.4.32 | 8.4.49 | Latest stable version |
 | typescript | 5.3.3 | 5.7.3 | Latest stable version |
 | @types/node | 20.10.5 | 22.10.5 | Latest type definitions |
-| @types/react | 18.2.45 | 18.3.18 | Latest type definitions |
-| @types/react-dom | 18.2.18 | 18.3.5 | Latest type definitions |
+| @types/react | 18.2.45 → **19.0.6** | **19.0.6** | React 19 type definitions |
+| @types/react-dom | 18.2.18 → **19.0.3** | **19.0.3** | React 19 type definitions |
 | eslint | 8.56.0 | 9.18.0 | Latest stable version |
-| eslint-config-next | 14.0.4 → 14.2.35 → 15.0.8 → **15.2.3** | Compatibility with Next.js 15 |
+| eslint-config-next | 14.0.4 → **15.5.10** | **15.5.10** | Compatibility with Next.js 15.5.x |
 
 ## ⚠️ CRITICAL: PaddlePaddle Remaining Vulnerabilities
 
